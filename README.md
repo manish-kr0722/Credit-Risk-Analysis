@@ -1,4 +1,4 @@
-## Credit Risk Analysis
+# Credit Risk Analysis
 An end-to-end data analytics project that analyzes loan applicant data to identify patterns in credit risk and default behavior, combining Python-based data cleaning and machine learning with an interactive Power BI dashboard.
 
 # Overview
@@ -26,7 +26,7 @@ cb_person_default_on_file — label encoded (binary)
 person_home_ownership, loan_intent — one-hot encoded (nominal, no inherent order)
 Modeling
 
-# A Random Forest Classifier was trained to predict loan_status.
+A Random Forest Classifier was trained to predict loan_status.
 
 Class weighting was tested (class_weight='balanced') to address the ~4:1 class imbalance between non-default and default cases. It did not meaningfully improve minority-class recall for this model, so the baseline (unweighted) Random Forest was kept as the final model. Threshold tuning is noted as a possible next step for future iterations.
 
@@ -34,7 +34,7 @@ The model is highly precise when it predicts default (96%) but misses about 29% 
 
 Key finding: loan-to-income ratio was the single strongest predictor of default — outweighing even the lender-assigned loan grade — suggesting affordability metrics carry more predictive signal than categorical risk grades alone.
 
-## Power BI Dashboard ##
+# Power BI Dashboard
 
 An interactive dashboard was built to explore the same findings visually, with slicers for Loan Grade, Home Ownership, Loan Intent, and Loan Status.
 
